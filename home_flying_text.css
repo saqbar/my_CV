@@ -1,0 +1,66 @@
+/* Контейнер для центрирования или управления общим блоком слов */
+.word-animation-section {
+    display: flex;
+    flex-direction: column; /* Слова друг под другом */
+    align-items: center; /* Центрируем по горизонтали */
+    padding: 50px 20px;
+    min-height: 500px; /* Добавим минимальную высоту, чтобы была прокрутка и Intersection Observer мог сработать */
+    justify-content: space-around; /* Распределяем слова равномерно */
+    /*font-size: 3em; !* Увеличим размер для наглядности *!*/
+    /*font-weight: bold;*/
+    color: aliceblue;
+}
+
+/* Общие стили для анимируемых слов */
+.animated-word {
+    opacity: 0; /* Изначально скрыты */
+    transition: opacity 2s ease-out, transform 2s ease-out; /* Плавный переход для всех анимаций */
+    will-change: transform, opacity; /* Подсказка браузеру для оптимизации */
+    padding: 10px 0; /* Отступы между словами */
+}
+
+/* Начальные состояния для слов, которые появляются слева */
+/* Это класс, который будет применяться к словам PLAN, DESIGN, GROW */
+.slide-from-left {
+    transform: translateX(-150%); /* Смещаем влево */
+}
+
+/* Начальные состояния для слов, которые появляются справа */
+/* Это класс, который будет применяться к слову BUILD */
+.slide-from-right {
+    transform: translateX(150%); /* Смещаем вправо */
+}
+
+/* Конечные состояния (когда слово появилось) */
+/* Этот класс будет добавляться JavaScript'ом, когда слово станет видимым */
+.is-visible {
+    opacity: 1; /* Полностью видны */
+    transform: translateX(0); /* Возвращаются на исходную позицию */
+}
+#wordPlan{
+    color: #00bb00;
+    font-size: 220px;
+}
+#wordDesign {
+    font-size: 6.5rem
+}
+#wordBuild {
+    font-size: 4.5rem
+}
+#wordGrow {
+    font-size: 5.5rem
+}
+/*@media (max-width: 768px) {*/
+/*    #wordPlan{*/
+/*        font-size: 7.5rem*/
+/*    }*/
+/*    #wordDesign {*/
+/*        font-size: 6.5rem*/
+/*    }*/
+/*    #wordBuild {*/
+/*        font-size: 4.5rem*/
+/*    }*/
+/*    #wordGrow {*/
+/*        font-size: 5.5rem*/
+/*    }*/
+}

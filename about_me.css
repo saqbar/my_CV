@@ -1,0 +1,60 @@
+.about-me {
+    /*padding: 60px 20px;*/
+    /*background-color: #f4f4f4;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.about-me-photo {
+    margin-right: 30px;
+}
+.about-me-photo img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-image {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 2 1 400px;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text h2 {
+        margin-top: 30px;
+    }
+    .about-me-photo {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}

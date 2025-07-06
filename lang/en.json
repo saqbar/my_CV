@@ -1,0 +1,71 @@
+{
+    "site_lang": "en",
+    "lang": "ru",
+
+    "menu_info": "Info",
+    "to_top": "To Top",
+
+    "info_name": "Artiom Volea",
+    "info_email": "sqbar333@gmail.com",
+    "info_position": "Backend Developer",
+    "info_tel": "+(373)79860846",
+    "info_address": "Chișinău, Moldova",
+
+    "text_more_info": "MORE INFO",
+
+    "skills": "Technical Skills",
+    "skill_1H": "Programming Languages",
+    "skill_1": "PHP (4 years), Node.js/NestJS (2 years), Swift/React Native (1 year)",
+    "skill_2H": "Backend Tools",
+    "skill_2": "REST API, Express/NestJS, Laravel, Composer, React Native, Swift",
+    "skill_3H": "Databases",
+    "skill_3": "MySQL, PostgreSQL",
+    "skill_4H": "Architecture & Patterns",
+    "skill_4": "SOLID, Clean Architecture, MVC",
+    "skill_5H": "Tools & DevOps",
+    "skill_5": "Git, Docker, Postman",
+    "skill_6H": "Testing",
+    "skill_6": "Unit testing, Postman, debugging",
+    "skill_7H": "Other",
+    "skill_7": "API integration, Microservices, Authentication/Authorization",
+
+    "experience": "Work Experience",
+    "cpa_time": "2023 – Present",
+    "cpa_h": "Backend Developer → Team Lead",
+    "cpa_1": "- Developed an analytics and process optimization service in affiliate marketing, integrating Facebook, Keitaro, Antidetect Browser, and card services.",
+    "cpa_2": "- Started as a Backend Developer, promoted to Team Lead after six months.",
+    "cpa_3": "- Designed architecture and implemented core business logic with NestJS and PostgreSQL.",
+    "cpa_4": "- Led the backend development team, conducted code reviews, and coordinated with product managers.",
+    "cpa_5": "- Responsible for deployment and stability of a scalable system.",
+
+    "midnight_time": "2022 – 2023",
+    "midnight_h": "Midnight Works | PHP Developer → Swift/React Native Developer → Team Lead",
+    "midnight_1": "- Started as a PHP Developer.",
+    "midnight_2": "- Switched to mobile app development with Swift and React Native after 4 months.",
+    "midnight_3": "- Promoted to Team Lead of the mobile development team 2 months later.",
+    "midnight_4": "- Managed the team, coordinated development processes, and oversaw app releases until leaving in 2023.",
+
+    "freelance_time": "2019 – 2022",
+    "freelance_h": "Freelance | Backend Developer",
+    "freelance_1": "- Worked with international clients to build web applications and backend services.",
+    "freelance_2": "- Developed REST APIs with PHP (plain and Laravel) and later with Node.js (NestJS).",
+    "freelance_3": "- Integrated third-party services (payment systems, CRMs, etc.).",
+    "freelance_4": "- Designed databases and implemented business logic.",
+    "freelance_5": "- Designed frontend with CSS, JS, Tailwind, Flexbox, Bootstrap.",
+    "freelance_6": "- Collaborated with designers to deliver finished products.",
+
+    "recent_work": "Recent Work",
+    "my_projects": "My Projects",
+
+    "flying_text_1": "PLAN",
+    "flying_text_2": "DESIGN",
+    "flying_text_3": "BUILD",
+    "flying_text_4": "GROW",
+
+    "index_about_me_h": "About Me",
+    "index_about_me_description_1": "If you are looking for a confident Middle Backend Developer who works effectively to achieve business goals — I’m your candidate.",
+    "index_about_me_description_2": "I have 4 years of experience with PHP, 2 years with Node.js (NestJS), and 1 year with Swift/React Native.",
+    "index_about_me_description_3": "During this time, I developed strong programming, problem-solving, teamwork, and leadership skills."
+
+
+  }

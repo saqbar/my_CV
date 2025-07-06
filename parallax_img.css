@@ -1,0 +1,73 @@
+/* Общий контейнер для секции галереи */
+.gallery-section {
+    padding: 80px 20px;
+    text-align: center;
+    overflow-x: hidden; /* Важно: скрываем горизонтальную прокрутку */
+    min-height: 500px; /* Убедимся, что есть достаточно высоты для прокрутки */
+}
+
+.gallery-section h2 {
+    font-size: 1.5em;
+    color: #8a8f95;
+}
+
+.gallery-section h3 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: aliceblue;
+}
+
+/* Контейнер для колонок галереи */
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Расстояние между колонками */
+    max-width: 1200px; /* Максимальная ширина галереи */
+    margin: 0 auto; /* Центрирование контейнера */
+}
+
+/* Стили для каждой колонки */
+.gallery-column {
+    display: flex;
+    flex-direction: column;
+    width: 45%; /* Примерная ширина */
+
+    /* Начальное состояние: скрыто и смещено */
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Плавный переход */
+    will-change: transform, opacity; /* Подсказка браузеру */
+}
+
+/* Начальное смещение для левой колонки */
+.left-column {
+    transform: translateX(-100%); /* Смещаем влево на 100% от своей ширины */
+}
+
+/* Начальное смещение для правой колонки */
+.right-column {
+    transform: translateX(100%); /* Смещаем вправо на 100% от своей ширины */
+}
+
+/* Класс, который добавляется при появлении: возвращает в исходное положение */
+.gallery-column.is-visible {
+    opacity: 1;
+    transform: translateX(0); /* Возвращаем на место */
+}
+
+
+/* Стили для отдельного элемента галереи (картинки) */
+/* Остаются без изменений, т.к. анимируем колонки, а не отдельные картинки */
+.gallery-item {
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
