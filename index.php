@@ -26,8 +26,6 @@
     <script type="module" src="home-flying_text.js"></script>
     <script type="module" src="parallax_img.js"></script>
 
-
-
 </head>
 <body class="dark:bg-[#151515] bg-[#fcfcfc] text-black dark:text-white font-lato transition-colors">
 <!--<script  type="importmap">{-->
