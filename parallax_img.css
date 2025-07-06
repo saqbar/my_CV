@@ -40,23 +40,18 @@
 
 /* Начальное смещение для левой колонки */
 .left-column {
-    transform: translateX(-100%); /* Смещаем влево на 100% от своей ширины */
+    transform: translateX(-100%);
 }
 
-/* Начальное смещение для правой колонки */
 .right-column {
-    transform: translateX(100%); /* Смещаем вправо на 100% от своей ширины */
+    transform: translateX(100%);
 }
 
-/* Класс, который добавляется при появлении: возвращает в исходное положение */
 .gallery-column.is-visible {
     opacity: 1;
-    transform: translateX(0); /* Возвращаем на место */
+    transform: translateX(0);
 }
 
-
-/* Стили для отдельного элемента галереи (картинки) */
-/* Остаются без изменений, т.к. анимируем колонки, а не отдельные картинки */
 .gallery-item {
     position: relative;
     margin-bottom: 30px;

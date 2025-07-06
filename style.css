@@ -2,8 +2,8 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Скрываем горизонтальную прокрутку */
-    background-color: black; /* На случай, если канвас не загрузится сразу */
+    overflow-x: hidden;
+    background-color: black;
 }
 #canvas-container {
     position: fixed; /* Закрепляем на месте */
@@ -11,23 +11,21 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Помещаем под остальной контент */
-    pointer-events: none; /* Чтобы мышь проходила сквозь канвас к контенту */
+    z-index: -1;
+    pointer-events: none;
 }
 #scrollable-content {
-    position: relative; /* Чтобы z-index работал относительно других элементов */
-    z-index: 1; /* Помещаем поверх канваса */
-    min-height: 200vh; /* Пример: делаем контент достаточно длинным для прокрутки. Настройте это! */
-    padding-top: 100px; /* Отступ сверху, чтобы контент не закрывал шапку */
-    color: white; /* Цвет текста для прокручиваемого контента */
-    /* Tailwind CSS классы можно использовать вместо inline-стилей */
-    /* например: class="relative z-10 min-h-[200vh] pt-[100px] text-white" */
+    position: relative;
+    z-index: 1;
+    min-height: 200vh;
+    padding-top: 100px;
+    color: white;
 }
 .content-block {
-    background-color: rgba(0, 0, 0, 0.6); /* Полупрозрачный фон для читаемости */
-    margin: 50px auto; /* Отступы между блоками */
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 50px auto;
     padding: 40px;
     max-width: 800px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.3); /* Легкая тень, чтобы выделить блоки */
+    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.3);
 }

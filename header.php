@@ -54,8 +54,7 @@
 <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 <script>
     function setLanguage(lang) {
-        document.cookie = "lang=" + lang + "; path=/; max-age=" + (365 * 24 * 60 * 60); // Устанавливаем куки на 1 год
-        // После установки куки можно перезагрузить страницу, чтобы изменения вступили в силу
+        document.cookie = "lang=" + lang + "; path=/; max-age=" + (365 * 24 * 60 * 60); // куки на 1 год
         window.location.reload();
     }
 </script>

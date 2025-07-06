@@ -1,4 +1,3 @@
-<?php //include 'set_lang_func.php'; ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -12,11 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<!--    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />-->
 
-<!--    <script type="module" src="https://unpkg.com/three@0.13.2/build/three.module.js"></script>-->
-<!--    <script type="module" src="https://unpkg.com/three@0.13.2/examples/jsm/controls/OrbitControls.js"></script>-->
-<!--    <script type="module" src="https://unpkg.com/three@0.13.2/examples/jsm/loaders/GLTFLoader.js"></script>-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="home_flying_text.css">
     <link rel="stylesheet" href="parallax_img.css">
@@ -26,27 +21,16 @@
     <script type="module" src="home-flying_text.js"></script>
     <script type="module" src="parallax_img.js"></script>
 
-
-
 </head>
 <body class="dark:bg-[#151515] bg-[#fcfcfc] text-black dark:text-white font-lato transition-colors">
-<!--<script  type="importmap">{-->
-<!--"imports": {-->
-<!--"three": "https://threejs.org/build/three.module.js"-->
-<!--}-->
-<!--}</script>-->
-<!--<script type="module" src="backg_flexible_text.js"></script>-->
+
 <?php include('header.php') ?>
-<!-- Контейнер для 3D-канваса, который будет закреплен как фон -->
-<!-- Классы: fixed inset-0 (занимает весь экран), z-[-1] (на заднем плане), pointer-events-none (пропускает события мыши) -->
+
 <div id="canvas-container" class="fixed inset-0 z-[-1] pointer-events-none"></div>
 
 <!-- Основной контейнер для всего прокручиваемого контента -->
-<!-- Классы: relative z-10 (поверх фона), min-h-[200vh] (обеспечивает прокрутку), text-white (цвет текста по умолчанию) -->
 <div id="scrollable-content" class="relative z-10 min-h-[200vh] text-white">
 
-    <!-- Секция первого экрана: шапка и центральный текст -->
-    <!-- Эта секция будет прокручиваться вместе с остальным контентом -->
     <div class="relative min-h-screen flex flex-col items-center justify-center pt-20 pb-10">
 
 
@@ -56,7 +40,7 @@
         </div>
     </div>
 
-    <!-- Ниже этой точки будут располагаться ваши дополнительные блоки контента -->
+    <!-- Ниже будут располагаться основные блоки контента -->
     <div id="info" class="content-block text-center  mx-auto my-10 p-10 max-w-4xl rounded-lg shadow-lg">
         <p class="text-3xl font-bold mb-4"><?php echo ($translations['info_name'])?> | <?php echo ($translations['info_position'])?></p>
         <p class="text-xl font-bold mb-4"><?php echo ($translations['info_email'])?> | <?php echo ($translations['info_tel'])?></p>
@@ -184,11 +168,6 @@
 
     <?php include('home_flying_text.php') ?>
 
-
-
-
-
-
     <div data-dial-init class="fixed right-6 bottom-6 group">
         <div id="speed-dial-menu-dropdown-square" class="flex flex-col justify-end hidden py-1 mb-4 space-y-2 bg-white border border-gray-100 rounded-lg shadow-xs dark:bg-gray-700 dark:border-gray-600">
             <ul class="text-sm text-gray-500 dark:text-gray-300">
@@ -238,18 +217,14 @@
     </div>
 
 
-    <!-- Добавьте столько content-block, сколько необходимо для вашей страницы -->
 
+    <!-- конечный контейнер -->
     <div class="h-20"></div>
 
 </div>
 
-
-
-
 <!--Для отрисовки 3D-канваса-->
 <script type="module">
-    // Импортируем модули Three.js из CDN
     import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js';
     import { TextureLoader } from 'https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js';
 
