@@ -1,56 +1,29 @@
 .word-animation-section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; 
+    align-items: center; 
     padding: 50px 20px;
-    min-height: 500px;
-    justify-content: space-around;
+    min-height: 500px; 
+    justify-content: space-around; 
     color: aliceblue;
 }
 
 .animated-word {
-    opacity: 0;
-    transition: opacity 2s ease-out, transform 2s ease-out;
-    will-change: transform, opacity;
-    padding: 10px 0;
+    opacity: 0; 
+    transition: opacity 2s ease-out, transform 2s ease-out; 
+    will-change: transform, opacity; 
+    padding: 10px 0; 
 }
 
 .slide-from-left {
-    transform: translateX(-150%);
+    transform: translateX(-150%); 
 }
 
 .slide-from-right {
-    transform: translateX(150%);
+    transform: translateX(150%); 
 }
 
 .is-visible {
-    opacity: 1;
-    transform: translateX(0);
+    opacity: 1; 
+    transform: translateX(0); 
 }
-#wordPlan{
-    color: #00bb00;
-    font-size: 220px;
-}
-#wordDesign {
-    font-size: 6.5rem
-}
-#wordBuild {
-    font-size: 4.5rem
-}
-#wordGrow {
-    font-size: 5.5rem
-}
-/*@media (max-width: 768px) {*/
-/*    #wordPlan{*/
-/*        font-size: 7.5rem*/
-/*    }*/
-/*    #wordDesign {*/
-/*        font-size: 6.5rem*/
-/*    }*/
-/*    #wordBuild {*/
-/*        font-size: 4.5rem*/
-/*    }*/
-/*    #wordGrow {*/
-/*        font-size: 5.5rem*/
-/*    }*/
-/*}*/

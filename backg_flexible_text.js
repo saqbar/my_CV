@@ -23,7 +23,7 @@
 
     let logoPlane;
     const textureLoader = new TextureLoader();
-    textureLoader.load('img/logo0.png', (texture) => {
+    textureLoader.load('img/AV_wh.png', (texture) => {
     const aspectRatio = texture.image.width / texture.image.height;
     const planeHeight = 4;
     const planeWidth = planeHeight * aspectRatio;

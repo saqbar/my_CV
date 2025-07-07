@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Volea Artiom_Backend Developer</title>
-    <link rel="shortcut icon" href="img/logo3.jpg" />
+    <link rel="shortcut icon" href="img/AV_wh.png" />
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -249,7 +249,7 @@
 
     let logoPlane;
     const textureLoader = new TextureLoader();
-    textureLoader.load('img/logo0.png', (texture) => {
+    textureLoader.load('img/AV_wh.png', (texture) => {
         const aspectRatio = texture.image.width / texture.image.height;
         const planeHeight = 4;
         const planeWidth = planeHeight * aspectRatio;

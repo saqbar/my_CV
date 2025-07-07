@@ -2,8 +2,8 @@
 <nav class="bg-white border-gray-200 dark:bg-transparent">
     <div id="to-top" class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto pt-3 pl-3 pr-3">
         <a href="index.php" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="img/logo3.jpg" class="h-25" alt="Logo" />
-            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Sqbar | <?php echo ($translations['info_name'])?></span>
+            <img src="img/AV_wh.png" class="h-25" alt="Logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"><?php echo ($translations['info_name'])?></span>
         </a>
         <div class="flex items-center md:order-2 space-x-1 md:space-x-2 rtl:space-x-reverse">
 <!--            {{--            <a href="#" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Login</a>--}}-->
